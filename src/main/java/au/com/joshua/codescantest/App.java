@@ -5,6 +5,9 @@ import org.apache.log4j.Logger;
 
 public class App {
 	static final Logger LOGGER = Logger.getLogger(App.class);
+	static final String USERNAME = "someuser";
+	static final String PASSWORD = "someuser";
+	
     public static void main(String[] args) {
     	LOGGER.info("Class instantiated...");
         try {
@@ -13,7 +16,7 @@ public class App {
             String query = "SELECT * FROM Users WHERE username = '" + userInput + "'";
 
             // Establishing a connection (Assuming a connection is already set up)
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/dbname", "username", "password");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/dbname", USERNAME, PASSWORD);
 
             // Executing the query
             Statement statement = connection.createStatement();
