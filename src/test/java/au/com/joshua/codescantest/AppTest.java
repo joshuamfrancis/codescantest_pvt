@@ -1,4 +1,4 @@
-package au.com.serv.adodemo.codescantest;
+package au.com.joshua.codescantest;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

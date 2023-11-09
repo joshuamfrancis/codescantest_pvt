@@ -1,4 +1,4 @@
-package au.com.serv.adodemo.codescantest;
+package au.com.joshua.codescantest;
 
 import java.sql.*;
 import org.apache.log4j.Logger;
